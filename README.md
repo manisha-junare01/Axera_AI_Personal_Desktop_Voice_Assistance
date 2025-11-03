@@ -39,8 +39,7 @@ It helps users automate daily computer tasks, interact with apps via speech, and
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/Axera-AI.git
-cd Axera-AI
+https://github.com/manisha-junare01/Axera_AI_Personal_Desktop_Voice_Assistance/tree/main
 ```
 
 ### 2️⃣ Install Dependencies
@@ -133,4 +132,4 @@ This project is licensed under the MIT License.
 ## 💌 Contact
 
 📧 [manishajunare@gmail.com](mailto:manishajunare@gmail.com)
-🌐 [GitHub Repository](https://github.com/yourusername/Axera-AI)
+🌐 [GitHub Repository](https://github.com/manisha-junare01/Axera_AI_Personal_Desktop_Voice_Assistance/tree/main)
