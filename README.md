@@ -146,7 +146,7 @@ Example commands:
 
 **Manisha Junare**
 📍 Pune, India
-🌐 [LinkedIn](#) | [GitHub](#)
+🌐 [LinkedIn](#) | [GitHub](https://github.com/manisha-junare01/Axera_AI_Personal_Desktop_Voice_Assistance.git)
 
 ---
 
