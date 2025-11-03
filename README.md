@@ -1,4 +1,4 @@
-# 🤖 Axera AI – Your Personal Voice Assistant
+# 🤖 Axera AI – Your Personal Desktop Voice Assistant
 
 **Axera AI** is a smart personal desktop voice assistant built using Python and modern AI tools.
 It helps users automate daily computer tasks, interact with apps via speech, and integrate with APIs like Google Calendar, ChatGPT, and more.
