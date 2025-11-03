@@ -1,135 +1,167 @@
-# 🤖 Axera AI – Your Personal Desktop Voice Assistant
+# 🤖 Axera AI – Smart Desktop Voice Assistant
 
-**Axera AI** is a smart personal desktop voice assistant built using Python and modern AI tools.
-It helps users automate daily computer tasks, interact with apps via speech, and integrate with APIs like Google Calendar, ChatGPT, and more.
+> Your personal AI-powered assistant built with Python 🧠✨
 
----
-
-## 🌟 Key Features
-
-✅ Wake word activation
-✅ Voice authentication (male/female voice switch)
-✅ System & media control (shutdown, volume, play/pause)
-✅ App and web automation (Notepad, YouTube, Chrome)
-✅ Email & WhatsApp messaging
-✅ Wikipedia & Google Search
-✅ Word-to-number calculator (BODMAS)
-✅ PDF reader, notes, reminders, alarms
-✅ Google Calendar integration
-✅ Local and Spotify/YouTube music control
-✅ ChatGPT-powered AI interaction
-✅ Weather, news, battery & brightness updates
-✅ Multi-language support (Marathi, Hinglish, English)
-✅ Offline basic commands
-✅ Logging, memory, and error handling
+Axera is a **desktop voice assistant** that helps you perform everyday tasks — from playing music 🎵 and managing files 📂 to scheduling reminders 🕒, authenticating via voice 🔐, and chatting with AI 💬 — all through simple voice commands.
 
 ---
 
-## 🧠 Tech Stack
+## 🚀 Features
 
-**Language:** Python
-**Libraries:** `speech_recognition`, `pyttsx3`, `pyaudio`, `pywhatkit`, `wikipedia`, `smtplib`, `requests`, `schedule`, `opencv`, `Pillow`, `psutil`, `googletrans`, `openai`, `tkinter`
-**Build Tools:** `PyInstaller`, `Inno Setup`
-**Frontend (Website):** HTML, CSS, JS (or React + Tailwind)
+### 🗣️ Voice Interaction
+
+* Real-time **speech recognition & text-to-speech**
+* **Wake word activation** (“Axera”)
+* Switch between **male/female** voice
+
+### 🪟 Modern GUI
+
+* Built using **Tkinter** / **CustomTkinter**
+* Status indicators (“Listening…”, “Processing…”)
+* Start / Stop / Settings buttons
+* Live mic animation + output command log
+
+### 🔐 Authentication
+
+* Register & login with **voice samples**
+* Wake word detection for secure activation
+
+### 🕒 Smart Scheduler
+
+* **Reminders & alarms** with `schedule` + `datetime`
+* Optional Google Calendar integration
+
+### 📄 PDF Reader
+
+* Reads PDF aloud using `PyPDF2` + `pyttsx3`
+
+### 📸 Camera Control
+
+* Open/close webcam
+* Capture & save photos via `cv2`
+
+### 🧮 Smart Calculator
+
+* Understands natural language math (e.g. “five plus three”)
+* Uses safe evaluation (BODMAS logic)
+
+### 🎵 Music Player
+
+* Play / Pause / Stop local files
+* Play songs on **Spotify** or **YouTube** via `pywhatkit`
+
+### ⚙️ System Control
+
+* Adjust volume
+* Shutdown / Restart / Lock system
+* Window management using `pyautogui`
 
 ---
 
-## 🛠️ Installation & Setup
+## 🧩 Folder Structure
 
-### 1️⃣ Clone Repository
-
-```bash
-https://github.com/manisha-junare01/Axera_AI_Personal_Desktop_Voice_Assistance/tree/main
+```
+AxeraAI/
+│
+├── main.py               # Entry point (controller)
+├── voice_engine.py       # Voice input/output logic
+├── gui.py                # GUI interface
+├── auth.py               # Login & voice authentication
+├── scheduler.py          # Reminders & Google Calendar
+├── pdf_reader.py         # PDF reading aloud
+├── camera_control.py     # Camera open/capture
+├── calculator.py         # Word-based calculator
+├── music_player.py       # Local & online music
+├── system_control.py     # Volume & system commands
+└── utils/                # Helper modules (if any)
 ```
 
-### 2️⃣ Install Dependencies
+---
+
+## 🛠️ Tech Stack
+
+| Area         | Tools / Libraries                          |
+| ------------ | ------------------------------------------ |
+| Language     | Python 3.x                                 |
+| Voice Engine | `speech_recognition`, `pyttsx3`, `pyaudio` |
+| GUI          | `tkinter`, `customtkinter`                 |
+| AI Chat      | OpenAI API / ChatGPT                       |
+| Camera       | `opencv-python`                            |
+| PDF          | `PyPDF2`                                   |
+| Scheduler    | `schedule`, `datetime`                     |
+| System       | `os`, `pyautogui`, `pycaw`                 |
+
+---
+
+## ⚙️ Installation
+
+1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/AxeraAI.git
+cd AxeraAI
+```
+
+2️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Assistant
+3️⃣ Run the assistant
 
 ```bash
-python src/main.py
+python main.py
 ```
 
-### 4️⃣ Build Executable
+---
 
-```bash
-pyinstaller --onefile --windowed --icon=setup/icon.ico src/main.py
+## 🔊 Wake Word
+
+Say **“Axera”** to activate your assistant.
+
+Example commands:
+
+* “Axera, open camera”
+* “Axera, read my PDF”
+* “Axera, play music”
+* “Axera, remind me at 7 PM”
+
+---
+
+## 📸 Screenshots (Optional)
+
+*(Add your GUI and demo images here)*
+
+```
+/assets/
+├── gui_preview.png
+├── voice_auth_demo.png
+└── reminder_screenshot.png
 ```
 
-Use **Inno Setup** to create installer and shortcut for desktop use.
+---
+
+## 👩‍💻 Author
+
+**Manisha Junare**
+📍 Pune, India
+🌐 [LinkedIn](#) | [GitHub](#)
 
 ---
 
-## 🔐 Login + Voice Authentication Flow
+## 💡 Future Enhancements
 
-* User registers → enters name, sets voice password
-* System trains voiceprint (using `speech_recognition` + `pyaudio`)
-* On startup → waits for **wake word ("Axera")**
-* Authenticates user → activates assistant
-
----
-
-## 📁 Website Pages
-
-* **Home** – Overview & download button
-* **Download** – Installer + setup guide
-* **How to Use** – Step-by-step with screenshots
-* **About/Team** – Developers & project vision
-* **Contact** – Email, GitHub, Support form
+* Add NLP-based smart conversation
+* Integrate weather & news APIs
+* Build cross-platform desktop app
 
 ---
 
-## 🧩 Project Modules
+## 🏁 License
 
-| Module              | Description                     |
-| ------------------- | ------------------------------- |
-| `voice_engine.py`   | Speech recognition + synthesis  |
-| `auth.py`           | User login + voice verification |
-| `ai_chat.py`        | ChatGPT integration             |
-| `scheduler.py`      | Alarms + reminders              |
-| `system_control.py` | System, media & app controls    |
-| `pdf_reader.py`     | PDF to speech                   |
-| `music_player.py`   | Local & online music control    |
-| `camera_control.py` | Camera open/capture             |
-| `calculator.py`     | BODMAS calculator               |
-| `gui.py`            | Tkinter-based dashboard         |
+This project is licensed under the **MIT License**.
 
 ---
 
-## ⚙️ Troubleshooting
-
-| Issue                  | Solution                                     |
-| ---------------------- | -------------------------------------------- |
-| Mic not detected       | Check `pyaudio` installation                 |
-| Wake word not working  | Retrain voice or check noise levels          |
-| No sound output        | Change default output device                 |
-| ChatGPT not responding | Check API key in `.env`                      |
-| Installer failed       | Run as admin / disable antivirus temporarily |
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-## 👩‍💻 Team
-
-**Axera AI** by
-
-* Manisha Junare (Lead Developer)
-* Shraddha Salve
-* Yutee Kharat-Patil
-* Abhishek Bankar
-
----
-
-## 💌 Contact
-
-📧 [manishajunare@gmail.com](mailto:manishajunare@gmail.com)
-🌐 [GitHub Repository](https://github.com/manisha-junare01/Axera_AI_Personal_Desktop_Voice_Assistance/tree/main)
+✨ *Axera – “Think. Speak. Assist.”* ✨
