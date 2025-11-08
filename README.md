@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Axera AI Logo](assets/images/logo.png)
+![Axera AI Logo](assets/icons/axera_icon.ico)
 
 **Your Intelligent Desktop Companion**
 
